@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTIPLICATION TABLE</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url('break.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color: white;
+        min-width: 100%;
+        font-size: 1.2rem;
+        min-height: 100vh;
+        font-family: serif,
+    }
+    label {
+        margin: 16px;
+    }
+    input {
+        padding: 8px;
+        margin-top: 16px;
+        border-radius: 10px;
+        outline: none;
+        cursor: text;
+        
+    }
+    button {
+        margin: 1rem auto;
+        padding: 10px 12px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        font-size: 16px;
+        outline: none;
+    }
+</style>
+<body>
+    <h2>MULTIPLICATION TABLE</h2>
+
+    <label><b>Enter a number</b></label>
+    <input type="number" id="value1" name="value"><br>
+
+    <label><b>Enter the range</b></label>
+    <input type="number" id="value2" name="value"><br>
+
+    <button onclick="multiplicationTable()">Generate</button>
+
+    <p id="mytable"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
